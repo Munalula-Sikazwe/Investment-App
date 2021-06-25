@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/InvestmentCaluculatorPythonBackend.iml" filepath="$PROJECT_DIR$/.idea/InvestmentCaluculatorPythonBackend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/InvestmentAppDjangoBackend.iml" filepath="$PROJECT_DIR$/.idea/InvestmentAppDjangoBackend.iml" />
     </modules>
   </component>
 </project>
