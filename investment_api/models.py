@@ -1,3 +1,8 @@
 from django.db import models
 
 # Create your models here.
+class InvestmentModel(models.Model):
+    user_name = models.CharField(max_length=100)
+    amount = models.IntegerField()
+    investment_returns = models.IntegerField()
+    duration = models.IntegerField()
