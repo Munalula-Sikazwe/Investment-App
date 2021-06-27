@@ -6,3 +6,5 @@ class Investment(models.Model):
     amount = models.IntegerField()
     investment_returns = models.IntegerField()
     duration = models.IntegerField()
+    def __str__(self):
+        return self.user_name
