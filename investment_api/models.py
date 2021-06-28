@@ -8,5 +8,4 @@ class Investment(models.Model):
     duration = models.IntegerField()
     def __str__(self):
         return self.username
-    def save(self):
-        self.investmentReturns = self.amount * .3
+   
