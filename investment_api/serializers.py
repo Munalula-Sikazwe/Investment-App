@@ -7,3 +7,4 @@ class InvestmentSerializer(ModelSerializer):
     class Meta:
         model = InvestmentModel
         fields = ['investmentId','username','amount','duration','investmentReturns']
+
