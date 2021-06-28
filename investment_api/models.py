@@ -4,7 +4,7 @@ from django.db import models
 class Investment(models.Model):
     username = models.CharField(max_length=100)
     amount = models.IntegerField()
-    investmentReturns = models.IntegerField()
+    investmentReturns = models.IntegerField(blank=True,null=True)
     duration = models.IntegerField()
     def __str__(self):
         return self.username
