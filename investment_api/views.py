@@ -16,3 +16,4 @@ class InvestmentsView(ListCreateAPIView):
 
 class DeleteInvestmentView(DestroyAPIView):
     queryset = Investment.objects.all()
+   
