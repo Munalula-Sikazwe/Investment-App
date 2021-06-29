@@ -13,6 +13,5 @@ class InvestmentsView(ListCreateAPIView):
     queryset = Investment.objects.all()
     # permission_classes = [IsAuthenticatedOrReadOnly]
 
-
 class DeleteInvestmentView(DestroyAPIView):
     queryset = Investment.objects.all()
