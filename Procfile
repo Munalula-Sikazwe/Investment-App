@@ -1,1 +1,1 @@
-web: gunicorn Investment_Backend
+web: gunicorn Investment_Backend --log-file -
