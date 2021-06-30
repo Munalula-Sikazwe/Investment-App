@@ -1,9 +1,10 @@
 from django.urls import path
 
-from .views import InvestmentsView, DeleteInvestmentView
+from .views import InvestmentsView, DeleteInvestmentView,Home
 
 urlpatterns = [
-    path('Investments', InvestmentsView.as_view()),
-    path('Investments/Delete/<int:pk>', DeleteInvestmentView.as_view()),
+    path('',Home),
+    path('api/Investments', InvestmentsView.as_view()),
+    path('api/Investments/Delete/<int:pk>', DeleteInvestmentView.as_view()),
 
 ]
