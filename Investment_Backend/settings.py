@@ -135,5 +135,7 @@ REST_FRAMEWORK = {
     #     'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     # ]
 }
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_WHITELIST = [
+    'https://investmentapp-frontend.herokuapp.com',
+]
 CORS_ALLOW_CREDENTIALS = True
