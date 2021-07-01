@@ -137,5 +137,6 @@ REST_FRAMEWORK = {
 }
 CORS_ORIGIN_WHITELIST = [
     'https://investmentapp-frontend.herokuapp.com',
+    'http://localhost:3000'
 ]
 CORS_ALLOW_CREDENTIALS = True
