@@ -14,7 +14,7 @@ class InvestmentsView(ListCreateAPIView):
     # permission_classes = [IsAuthenticatedOrReadOnly]
 
 
-class DeleteInvestmentView(RetrieveUpdateDestroyAPIView):
+class ModifyInvestmentView(RetrieveUpdateDestroyAPIView):
     queryset = Investment.objects.all()
     serializer_class = InvestmentSerializer
 def Home(request):
