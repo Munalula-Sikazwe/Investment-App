@@ -1,4 +1,4 @@
-from rest_framework.generics import ListCreateAPIView, DestroyAPIView
+from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
 
 # Create your views here.
 from investment_api.serializers import InvestmentSerializer
@@ -14,8 +14,8 @@ class InvestmentsView(ListCreateAPIView):
     # permission_classes = [IsAuthenticatedOrReadOnly]
 
 
-class DeleteInvestmentView(DestroyAPIView):
+class DeleteInvestmentView(RetrieveUpdateDestroyAPIView):
     queryset = Investment.objects.all()
-
+    serializer_class = InvestmentSerializer
 def Home(request):
     return HttpResponse("<h1>Welcome to the Investment api homepage please use the valid endpoints</h1>")
